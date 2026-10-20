@@ -1,0 +1,22 @@
+# Do not commit raw or row-level derivative data
+MixtureSolDB.csv
+harmonized_metadata.csv
+private_*
+LOCAL_predictions*
+_LOCAL_ONLY_predictions*
+*.pkl
+*.joblib
+*.log
+__pycache__/
+.ipynb_checkpoints/
+local_run/
+
+# Local-only preparation material
+.env
+.env.*
+*.pem
+*.key
+*.sqlite
+*.db
+CHEM02_PRIVATE*
+CHEM02_FINAL_PRIVATE*
