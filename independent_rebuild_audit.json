@@ -1,0 +1,72 @@
+{
+  "input_file_name": "MixtureSolDB.csv",
+  "input_md5": "597e31685fe36c78d568f3d37b6e1336",
+  "rdkit_version": "2025.09.4",
+  "raw_rows": 175166,
+  "raw_columns": 19,
+  "fraction_types": {
+    "mass": 91463,
+    "mole": 83703
+  },
+  "ambiguous_PEG_mass_excluded": 1244,
+  "excluded_other_unique": 206,
+  "excluded_total_unique": 1450,
+  "valid_before_dedup": 173716,
+  "rebuild_unique_physical_conditions": 172880,
+  "historical_unique_physical_conditions": 172880,
+  "comparison": {
+    "keys_in_both": 172880,
+    "only_in_historical": 0,
+    "only_in_rebuild": 0,
+    "column_diffs": {
+      "y": {
+        "count_mismatch_above_1e-10": 0,
+        "max_abs_delta": 8.881784197001252e-16
+      },
+      "z": {
+        "count_mismatch_above_1e-10": 0,
+        "max_abs_delta": 1.1102230246251565e-16
+      },
+      "T": {
+        "count_mismatch_above_1e-10": 0,
+        "max_abs_delta": 0.0
+      },
+      "n_replicates": {
+        "mismatched": 0
+      },
+      "source_count": {
+        "mismatched": 0
+      },
+      "endpoint": {
+        "mismatched": 0
+      },
+      "source": {
+        "mismatched": 0
+      }
+    }
+  },
+  "repeat_groups": 836,
+  "repeat_extra_rows": 836,
+  "repeat_groups_gt_0p1": 441,
+  "repeat_groups_cross_source": 834,
+  "rowwise_logS_disagreement_gt_1e-3": 0,
+  "source_missing_count": 0,
+  "endpoint_flag_mismatch_raw": 0,
+  "unique_solutes": 806,
+  "unique_solvent_pairs": 740,
+  "unique_systems": 2952,
+  "unique_sources_before_collapse": 1097,
+  "multi_source_collapsed_groups": 834,
+  "cleaning_rules": {
+    "temperature_K": [
+      180,
+      500
+    ],
+    "solubility_log10_max": 0,
+    "fraction_sum_tol": 0.0001,
+    "group_T_round_decimals": 3,
+    "group_z_round_decimals": 8,
+    "group_output": "median measured logS within same canonical solute/solvent pair/T/z",
+    "PEG_detection": "conservative name-based PEG screen on mass fraction records; not comprehensive"
+  }
+}
